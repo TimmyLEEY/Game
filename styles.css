@@ -1,63 +1,136 @@
-*{
-    padding: 0;
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
-body{
-    background: #413e3e;
-    /* height: 100vh; */
-    background-image: url(WF-123735_PlayingCards_Social_Request_UK_2-1024x1024.webp);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+
+body {
+    background: url('neon-bg.webp') no-repeat center center/cover;
     background-attachment: fixed;
+    text-align: center;
     color: white;
-}
-.container{
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
-    /* height: 500px; */
-    width: 20%;
-    /* background-color: aqua; */
+    align-items: center;
+    height: 100vh;
+    background-color: #797575;
+}
+
+/* Main Game Container */
+.container {
+    width: 90%;
+    max-width: 400px;
     margin: auto;
-    /* background: plum; */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
 }
-.sec1{
-    background: rgb(75, 75, 187);
-    border-radius: 20px;
+
+/* Heading */
+h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 5px cyan, 0 0 10px blue;
+}
+
+/* Scoreboard */
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 20px;
     padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
 }
-.sec1 input{
-    width: 80%;
+
+/* Game Input Section */
+.sec1 {
+    background: rgba(0, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.sec1 label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.sec1 input {
+    width: 100%;
     height: 50px;
-    border-radius: 20px;
     border: none;
-}
-.sec1 button{
-    width: 80%;
-    border: none;
-    border-radius: 20px;
-    background-color: rgb(37, 37, 207);
-    height: 30px;
-    color: white;
-}
-.sec3{
-    border: solid 1px black;
     border-radius: 10px;
-    width: 70%;
-    padding: 10px;
-    height: 30px;
     font-size: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
 }
-.sec4{
-    border: solid 1px black;
-    border: solid 1px black;
+
+.sec1 input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.sec1 button {
+    width: 100%;
+    border: none;
     border-radius: 10px;
-    width: 70%;
-    padding: 10px;
-    height: 60px;
+    background: linear-gradient(45deg, cyan, blue);
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
-.sec2{
-    background: red;
-    border-radius: 20px;
+
+.sec1 button:hover {
+    background: linear-gradient(45deg, blue, cyan);
+    transform: scale(1.05);
+}
+
+/* Game Output Section */
+.sec2 {
+    background: rgba(255, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 15px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+.sec3, .sec4 {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
     padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    color: white;
+    font-size: 20px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .scoreboard {
+        font-size: 16px;
+    }
 }

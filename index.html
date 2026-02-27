@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Number Guessing Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <div class="container">
-        <div>
-            <div class="sec1">
-                <label for="input1">Guess a number</label><br>
-                <input id="input1" type="text"><br><br>
-                <button onclick="game()">Start game</button>
-            </div><br>
-            <div class="sec2">
-                <div class="sec3"><h5 id="display"></h5></div><br>
-                <div class="sec4"><h1 id="math"></h1></div>
-            </div>
+        <h1>Number Guessing Game</h1>
+
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+            <p>✅ Correct: <span id="score">0</span></p>
+            <p>❌ Missed: <span id="misses">0</span></p>
+        </div>
+
+        <!-- Game Input -->
+        <div class="sec1">
+            <label for="input1">Guess a number (1-5)</label><br>
+            <input id="input1" type="number" min="1" max="5"><br><br>
+            <button onclick="game()">Start Game</button>
+            <button onclick="resetGame()">Reset</button>
+        </div><br>
+
+        <!-- Game Output -->
+        <div class="sec2">
+            <div class="sec3"><h5 id="display"></h5></div><br>
+            <div class="sec4"><h1 id="math"></h1></div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
-<script src="script.js"></script>
