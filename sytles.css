@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #413e3e;
+    /* height: 100vh; */
+    background-image: url(WF-123735_PlayingCards_Social_Request_UK_2-1024x1024.webp);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+.container{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* height: 500px; */
+    width: 20%;
+    /* background-color: aqua; */
+    margin: auto;
+    /* background: plum; */
+}
+.sec1{
+    background: rgb(75, 75, 187);
+    border-radius: 20px;
+    padding: 10px;
+}
+.sec1 input{
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+}
+.sec1 button{
+    width: 80%;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(37, 37, 207);
+    height: 30px;
+    color: white;
+}
+.sec3{
+    border: solid 1px black;
+    border-radius: 10px;
+    width: 70%;
+    padding: 10px;
+    height: 30px;
+    font-size: 20px;
+}
+.sec4{
+    border: solid 1px black;
+    border: solid 1px black;
+    border-radius: 10px;
+    width: 70%;
+    padding: 10px;
+    height: 60px;
+}
+.sec2{
+    background: red;
+    border-radius: 20px;
+    padding: 10px;
+}
